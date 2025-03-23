@@ -1,1 +1,3 @@
+*.css linguist-documentation=true
 *.html linguist-documentation=false
+*.js linguist-documentation=false
