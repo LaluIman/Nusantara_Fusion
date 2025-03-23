@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusantara Fusion</title>
+    <link rel="shortcut icon" href="assets/FavIcon.webp" type="image/x-icon" />
+    <!-- link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="script.js"></script>
+    <!-- link -->
+    <!-- meta -->
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- meta -->
+    <!-- Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#56704E',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind -->
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="fixed bg-white md:bg-transparent w-full z-20 top-0 start-0 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href=""
+                class="flex items-center space-x-3 rtl:space-x-reverse bg-white/50 backdrop-blur-md px-1 rounded-lg">
+                <img draggable="false" src="assets/Icon2.webp" class="h-10">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <div class="inline-flex rounded-full shadow hidden md:block border">
+                    <div href="#"
+                        class="inline-flex items-center px-6 py-2 text-base text-gray-900 bg-white border border-transparent rounded-full cursor-pointer font-base transition-all hover:bg-gray-50">
+                        Sign in
+                    </div>
+                </div>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary rounded-lg md:hidden hover:bg-gray-100 "
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div id="navbar-sticky" class="hidden md:flex md:space-x-8 justify-between w-full md:w-auto md:order-1">
+                <div class="flex items-center px-2 py-2 bg-gray-100 md:rounded-full space-x-4 
+                flex-col p-4 md:p-2 mt-4 font-medium bg-gray-100/80 backdrop-blur-md rtl:space-x-reverse md:flex-row md:mt-0 md:border 
+                md:justify-center justify-start items-start md:items-center md:w-auto w-full">
+                    <a href="#home"
+                        class="active text-base font-normal text-gray-500 hover:text-gray-900 px-3 py-1 rounded-full transition-all duration-200 hover:bg-white hover:text-gray-900">
+                        Home
+                    </a>
+                    <a href="#about"
+                        class=" text-base font-normal text-gray-500 hover:text-gray-900 px-3 py-1 rounded-full transition-all duration-200 hover:bg-white hover:text-gray-900">
+                        About
+                    </a>
+                    <a href="#gallery"
+                        class="text-base font-normal text-gray-500 hover:text-gray-900 px-3 py-1 rounded-full transition-all duration-200 hover:bg-white hover:text-gray-900">
+                        Gallery
+                    </a>
+                    <a href="#contact"
+                        class="text-base font-normal text-gray-500 hover:text-gray-900 px-3 py-1 rounded-full transition-all duration-200 hover:bg-white hover:text-gray-900">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Home -->
+    <section id="home" class="mt-40">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center">
+            <div class="text-center">
+                <div class="mx-auto max-w-sm md:max-w-3xl text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        Begin an exploration through a gallery showcasing
+                        <span class="relative whitespace-nowrap text-[#56704E]">
+                            <svg aria-hidden="true" viewBox="0 0 418 42"
+                                class="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#4C6245]"
+                                preserveAspectRatio="none">
+                                <path
+                                    d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                                </path>
+                            </svg>
+                            <span class="relative">Indonesian</span>
+                        </span> cultural heritage and artisan creativity.</span>
+                    </h1>
+                </div>
+                <div class="mt-6">
+                    <div class="flex flex-col justify-center items-center">
+                        <a href="#" class="font-base text-gray-500">
+                            Scroll down
+                        </a>
+                        <lord-icon class="rotate-90" src="https://cdn.lordicon.com/whtfgdfm.json" trigger="loop"
+                            delay="1000" state="hover-ternd-flat-5" colors="primary:#64748b"
+                            style="width:20px; height:20px">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div id="wrapper">
+                    <div id="top-oval"></div>
+                    <div class="relative w-full" id="strip-w">
+                        <div data-glide-el="track">
+                            <ul
+                                class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 pb-12">
+                                <li class="strip-item shadow-lg">
+                                    <img src="assets/1.png" alt="Image 1">
+                                </li>
+                                <li class="strip-item shadow-lg">
+                                    <img src="assets/2.png" alt="Image 2">
+                                </li>
+                                <li class="strip-item shadow-lg">
+                                    <img src="assets/3.png" alt="Image 3">
+                                </li>
+                                <li class="strip-item shadow-lg">
+                                    <img src="assets/4.png" alt="Image 4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="bottom-oval"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Home -->
+
+    <!-- About -->
+    <section id="about" class="mb-5">
+        <div
+            class="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-12 lg:py-24 space-y-24 flex flex-col justify-center">
+            <div class="flex w-full flex-col items-center justify-center text-center px-4 ">
+                <h1
+                    class="border border-primary text-primary font-bold rounded-xl py-2 px-4 text-md mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
+                    A bland of amazing nature
+                </h1>
+                <h1 class="mx-auto text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    Discover the Unparalleled Beauty and Rich Cultural Heritage of Indonesia, <span
+                        class="text-gray-500">a Hidden Gem of Southeast Asia🏝️</span>
+                </h1>
+            </div>
+            <div class="flex flex-col sm:flex-row mx-5">
+                <a href="#_">
+                    <img draggable="false" src="assets/image 4.png"
+                        class="rounded-lg hover:rotate-0 hover:scale-105 transition-all rotate-6 duration-500 w-full object-cover origin-bottom"
+                        alt="#_"> </a>
+                <a href="#_">
+                    <img draggable="false" src="assets/image 5.png"
+                        class="rounded-lg hover:rotate-0 hover:scale-105 transition-all  -rotate-12 duration-500  w-full object-cover origin-bottom"
+                        alt="#_"> </a>
+                <a href="#_">
+                    <img draggable="false" src="assets/image 6.png"
+                        class="rounded-lg hover:rotate-0 hover:scale-105  transition-all rotate-6 duration-500  w-full object-cover origin-bottom"
+                        alt="#_"> </a>
+                <a href="#_">
+                    <img draggable="false" src="assets/image 7.png"
+                        class="rounded-lg hover:rotate-0 hover:scale-105 transition-all  -rotate-12 duration-500  w-full object-cover origin-bottom"
+                        alt="#_"> </a>
+            </div>
+            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                <div class="flex items-center gap-12">
+                    <img src="assets/Icon2.webp" class="h-10" alt="">
+
+                    <p class="hidden max-w-screen-sm md:block text-sm text-gray-400">
+                        Welcome to Nusantara Fusion, a captivating space dedicated to showcasing the rich and diverse
+                        cultural heritage of Indonesia. Nestled in the heart of Indonesia's vibrant cultural landscape,
+                        our museum is a testament to the timeless beauty and significance of traditional arts and
+                        customs.
+                    </p>
+                </div>
+
+                <a href="#"
+                    class="inline-block gap-2 flex items-center rounded-full border bg-primary px-4 py-2 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-primary/80 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                    Explore now
+                    <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" trigger="loop" delay="1000"
+                        state="hover-ternd-flat-2" colors="primary:#ffffff" style="width:25px;height:25px">
+                    </lord-icon>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-primary">
+        <div class="py-12  justify-center max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto">
+            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                <div class="flex items-start gap-36">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white">Unveiling the Hidden Treasures of Indonesia
+                    </h1>
+                    <p class="hidden max-w-screen-sm md:block text-md text-white">
+                        See what lies beyond Indonesia's beauty, explore our gallery and discover the hidden treasures
+                        of Indonesia, a land of rich cultural heritage, breathtaking landscapes, and vibrant traditions.
+                    </p>
+                </div>
+            </div>
+            <div class="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-4">
+                <!-- 1 -->
+                <div class="w-72">
+                    <a href="#">
+                        <img src="assets/image 5.png" alt="" class="h-80 w-72 object-cover rounded-xl" />
+                        <div class="py-3 w-72">
+                            <h1 class="text-2xl font-bold text-white truncate block capitalize">Tradional Dance</h1>
+                            <p class="text-md text-white">See the beauty of traditional dance in Indonesia.</p>
+                            <a href=""
+                                class="btn bg-lime-800 border-2 border-lime-900 inline-block items-center gap-2 text-white flex py-2 mt-4 rounded-full bg-white text-center justify-center transition-all duration-100 hover:bg-lime-900">
+                                See Detail
+                                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" target=".btn" trigger="hover" delay="1000"
+                                    state="hover-ternd-flat-2" colors="primary:#ffffff" style="width:20px;height:20px">
+                                </lord-icon>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="w-72">
+                    <a href="#">
+                        <img src="assets/image 8.png" alt="" class="h-80 w-72 object-cover rounded-xl" />
+                        <div class="py-3 w-72">
+                            <h1 class="text-2xl font-bold text-white truncate block capitalize">Iconic places</h1>
+                            <p class="text-md text-white">Discover the amazing iconic places in Indonesia.</p>
+                            <a href=""
+                                class="btn bg-lime-800 border-2 border-lime-900 inline-block items-center gap-2 text-white flex py-2 mt-4 rounded-full bg-white text-center justify-center transition-all duration-100 hover:bg-lime-900">
+                                See Detail
+                                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" target=".btn" trigger="hover" delay="1000"
+                                    state="hover-ternd-flat-2" colors="primary:#ffffff" style="width:20px;height:20px">
+                                </lord-icon>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <!-- 3 -->
+                <div class="w-72">
+                    <a href="#">
+                        <img src="assets/image 6.png" alt="" class="h-80 w-72 object-cover rounded-xl" />
+                        <div class="py-3 w-72">
+                            <h1 class="text-2xl font-bold text-white truncate block capitalize">Tradional Dance</h1>
+                            <p class="text-md text-white">See the beauty of traditional dance in Indonesia.</p>
+                            <a href=""
+                                class="btn bg-lime-800 border-2 border-lime-900 inline-block items-center gap-2 text-white flex py-2 mt-4 rounded-full bg-white text-center justify-center transition-all duration-100 hover:bg-lime-900">
+                                See Detail
+                                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" target=".btn" trigger="hover" delay="1000"
+                                    state="hover-ternd-flat-2" colors="primary:#ffffff" style="width:20px;height:20px">
+                                </lord-icon>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <!-- 4 -->
+                <div class="w-72">
+                    <a href="#">
+                        <img src="assets/image 7.png" alt="" class="h-80 w-72 object-cover rounded-xl" />
+                        <div class="py-3 w-72">
+                            <h1 class="text-2xl font-bold text-white truncate block capitalize">Tradional Dance</h1>
+                            <p class="text-md text-white">See the beauty of traditional dance in Indonesia.</p>
+                            <a href=""
+                                class="btn bg-lime-800 border-2 border-lime-900 inline-block items-center gap-2 text-white flex py-2 mt-4 rounded-full bg-white text-center justify-center transition-all duration-100 hover:bg-lime-900">
+                                See Detail
+                                <lord-icon src="https://cdn.lordicon.com/vduvxizq.json" target=".btn" trigger="hover" delay="1000"
+                                    state="hover-ternd-flat-2" colors="primary:#ffffff" style="width:20px;height:20px">
+                                </lord-icon>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery -->
+
+    <!-- Contact -->
+    <!-- Contact -->
+</body>
+
+</html>
